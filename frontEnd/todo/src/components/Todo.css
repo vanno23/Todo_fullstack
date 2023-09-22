@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+.container {
+  background-color: white;
+  width: 400px;
+  min-height: 150px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  padding: 20px 10px;
+}
+
+.TodoInput form {
+  margin-top: 20px;
+}
+
+.TodoInput .todoTitle {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+}
+
+.TodoInput form .inputData {
+  position: relative;
+  height: 35px;
+}
+
+.TodoInput form input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 90px;
+}
+
+.TodoInput .TodoInputBtns {
+  position: absolute;
+  right: 0;
+  width: 85px;
+  height: 100%;
+}
+
+.TodoInput form .submitButton {
+  position: absolute;
+  right: 0;
+  width: 60px;
+  height: 100%;
+  right: 0;
+  padding: 5px 15px;
+  background-color: rgb(193, 2, 207);
+  border: none;
+  color: white;
+}
+
+.TodoInput .TodoInputBtns .completeButton {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  right: 0;
+  border: 2px solid black;
+  background-color: transparent;
+}
+.TodoInput .TodoInputBtns .completeButton.completeTrue {
+  border: 2px solid green;
+}
+.TodoInput .TodoInputBtns .completeButton .complete{
+  background-color: green;
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  position: absolute;
+  top: .8px;
+  left: .8px;
+}
+
+
+/* -- TodoContainer -- */
+
+.todoItemContainer {
+  margin-top: 10px;
+  font-family: 'Lato', sans-serif;
+}
+.todoItemContainer .todoItemContainerHeader {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.todoItemContainer {
+  letter-spacing: .6px;
+  font-size: .855rem;
+  font-weight: 900;
+}
+.totalTasks {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+
+/* -- todoItem -- */
+.todoItem {
+  text-transform: capitalize;
+  background-color: rgb(227, 227, 227);
+  margin: 5px 0;
+  border-left: 5px solid rgb(255, 94, 0);
+  padding: 13px 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todoItem.completed {
+  border-left: 5px solid green;
+}
+
+.todoItem .todoInfo {
+  margin-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.todoItem .todoItemIndex {
+  font-size: .855rem;
+  font-weight: 700;
+}
+
+.todoItem .todoItemTitle {
+  letter-spacing: .5px;
+  font-size: .805rem;
+  font-weight: 400;
+}
+
+.todoItem .todoIcons {
+  display: flex;
+  column-gap: 5px;
+}
+
+.todoItem .todoIcons button {
+  display: flex;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+}
+
+.todoItem .todoIcons .editIcon {
+  color: rgb(193, 2, 207);
+}
+
+.todoItem .todoIcons .deleteIcon {
+  color: rgb(239, 17, 17);
+}
